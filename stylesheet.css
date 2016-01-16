@@ -1,0 +1,10 @@
+.question {
+	padding: 10px;
+	background-color: rgba(152,204,255,0.75);
+	border-radius: 25px;
+}
+
+body {
+	padding-left: 100px;
+	padding-right: 100px;
+}
