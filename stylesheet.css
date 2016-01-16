@@ -8,3 +8,9 @@ body {
 	padding-left: 100px;
 	padding-right: 100px;
 }
+
+.jumbotron {
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	text-align: center;
+}
