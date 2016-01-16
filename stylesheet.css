@@ -13,4 +13,16 @@ body {
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	text-align: center;
+	background-color: rgba(153,0,0,0.75);
+	color: rgba(204,204,0,0.75);
+}
+
+.radio {
+
+	padding-left: 15px;
+}
+
+.qtext {
+	padding-left: 15px;
+	padding-top: 5px;
 }
