@@ -7,7 +7,8 @@
 body {
 	padding-left: 100px;
 	padding-right: 100px;
-
+	
+/*cribbed from CSS Tricks*/
 	background: url(images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -31,12 +32,4 @@ body {
 .qtext {
 	padding-left: 15px;
 	padding-top: 5px;
-}
-
-html { 
-  background: url(images/background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
