@@ -206,7 +206,34 @@
 </form>
 
 <script>
+var gryffindor = 0;
+var slytherin = 0;
+var hufflepuff = 0;
+var ravenclaw = 0;
+var hscore = 0;
+var house = "";
 
+function calculateHouse(form)
+{
+	var questions = form.elements;
+
+	for(q : questions)
+	{
+		if(q.value == "gryffindor")
+			gryffindor++;
+		else if(q.value == "ravenclaw")
+			ravenclaw++;
+		else if(q.value == "hufflepuff")
+			hufflepuff++;
+		else if(q.value == "slytherin")
+			slytherin++;
+	}
+
+	if(gryffindor > hscore)
+	{
+
+	}
+}
 </script>
 
 </body>
