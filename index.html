@@ -217,7 +217,7 @@ function calculateHouse(form)
 {
 	var questions = form.elements;
 
-	for(q : questions)
+	for(var i; i < questions.length; i++)
 	{
 		if(q.value == "gryffindor")
 			gryffindor++;
