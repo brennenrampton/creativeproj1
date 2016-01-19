@@ -42,5 +42,19 @@ body {
 }
 
 .btn-primary {
-	margin: auto;
+	border-radius: 7px;	
+	
+}
+
+#div-results {
+	padding: 10px;
+	background-color: rgba(0,0,0,0.75);
+	border-radius: 25px;
+	color: rgba(255,255,255,0.75);
+	font-size: xx-large;
+
+}
+
+#p-results {
+	text-align: center;
 }
