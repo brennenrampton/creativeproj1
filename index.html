@@ -199,34 +199,84 @@
 
 </form>
 
+<br>
+
+<button class = "btn-primary" onclick="calculateHouse(document.forms['quiz'])">What is YOUR house?</button>
+
+<div id="results">
+
+</div>
+
 <script>
-var gryffindor = 0;
-var slytherin = 0;
-var hufflepuff = 0;
-var ravenclaw = 0;
-var hscore = 0;
-var house = "";
+var scores = [0, 0, 0, 0];
+var scoresSort = [0, 0, 0, 0];
+//0 - gryffindor
+//1 - ravenclaw
+//2 - hufflepuff
+//3 - slytherin
 
 function calculateHouse(form)
 {
 	var questions = form.elements;
 
-	for(var i; i < questions.length; i++)
+	for(var i = 0; i < questions.length; i++)
 	{
 		if(q.value == "gryffindor")
-			gryffindor++;
+		{
+			scores[0]++;
+			scoresSort[0]++;
+		}
 		else if(q.value == "ravenclaw")
-			ravenclaw++;
+		{
+			scores[1]++;
+			scoresSort[1]++;
+		}
 		else if(q.value == "hufflepuff")
-			hufflepuff++;
+		{
+			scores[2]++;
+			scoresSort[2]++;
+		}
 		else if(q.value == "slytherin")
-			slytherin++;
+		{
+			scores[3]++;
+			scoresSort[3]++;
+		}
 	}
 
-	if(gryffindor > hscore)
+	scoresSort.sort();
+
+	int house = -1;
+	for(var i = 0; i < scores.length; i++)
 	{
+		if(scores[i] == scoresSort[0])
+			house = i;
+	}
+
+	switch(house) 
+	{
+		case 0:
+		{
+			getElementById(results).innerHTML = <strong>YOU ARE GRYFFINDOR!</strong>
+			break;
+		}
+		case 1:
+		{
+			getElementById(results).innerHTML = <strong>YOU ARE RAVENCLAW!</strong>
+			break;
+		}
+		case 2:
+		{
+			getElementById(results).innerHTML = <strong>YOU ARE HUFFLEPUFF!</strong>
+			break;
+		}
+		case 3:
+		{
+			getElementById(results).innerHTML = <strong>YOU ARE SLYTHERIN!</strong>
+			break;
+		}
 
 	}
+
 }
 </script>
 
