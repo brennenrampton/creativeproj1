@@ -27,7 +27,8 @@ body {
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	text-align: center;
-	background-color: rgba(153,0,0,0.75);
+	/*background-color: rgba(153,0,0,0.75);*/
+	background-color: rgba(102,0,102,0.75);
 	color: rgba(204,204,0,0.75);
 }
 
@@ -43,7 +44,7 @@ body {
 
 .btn-primary {
 	border-radius: 7px;	
-	
+
 }
 
 #div-results {
